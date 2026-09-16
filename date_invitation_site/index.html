@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Something for you, Gudda ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="site-shell">
+    <audio id="site-audio" src="assets/khat.mp3" preload="auto" loop></audio>
+    <button class="music-toggle" id="music-toggle" type="button" aria-label="Play music" aria-pressed="false">♪</button>
+
+    <section class="page active" id="page-1">
+      <div class="sparkles">✦ ˚｡⋆</div>
+      <div class="bear-scene">
+        <img class="bubu-dudu" src="assets/bubu-dudu.jpg" alt="Bubu and Dudu cuddling">
+      </div>
+      <p class="eyebrow">A tiny little surprise</p>
+      <h1>Something for you,<br><em>Gudda</em> ♡</h1>
+      <p class="subtext">Made with a little courage, a lot of love, and a little piece of my heart.</p>
+      <button class="primary next">Let’s go →</button>
+    </section>
+
+    <section class="page" id="page-2">
+      <button class="back-btn" type="button">← Back</button>
+      <div class="bear-scene large">
+        <img class="bubu-dudu waving" src="assets/bubu-dudu-pink.jpg" alt="Bubu and Dudu smiling together">
+      </div>
+      <h2>Hi, my Shona.</h2>
+      <p class="subtext">Before you read anything else…<br>please know that this comes from my heart.</p>
+      <button class="primary next">Keep going →</button>
+    </section>
+
+    <section class="page scrapbook-page" id="page-3">
+      <button class="back-btn" type="button">← Back</button>
+      <p class="eyebrow">A few little memories</p>
+      <h2>Our tiny scrapbook ♡</h2>
+      <div class="scrapbook">
+        <div class="photo-card rotate-left"><img class="memory-photo" src="assets/memory-gudda.jpg" alt="Gudda smiling by a Christmas tree"><span>you ♡</span></div>
+        <div class="photo-card rotate-right"><img class="memory-photo" src="assets/memory-me.jpg" alt="A sweet sunny memory"><span>me ♡</span></div>
+        <div class="photo-card rotate-left lower"><img class="memory-photo" src="assets/memory-us.jpg" alt="A soft moment together"><span>us, always?</span></div>
+        
+      </div>
+      <button class="secondary next">Scroll down ↓</button>
+    </section>
+
+    <section class="page" id="page-4">
+      <button class="back-btn" type="button">← Back</button>
+      <p class="eyebrow">There’s a letter for you</p>
+      <div class="envelope-wrap">
+        <button class="envelope" id="open-envelope" aria-label="Open the letter">
+          <div class="envelope-flap"></div>
+          <div class="envelope-paper">Click me ♡</div>
+          <div class="envelope-front"></div>
+        </button>
+      </div>
+      <p class="subtext">Tap the envelope whenever you’re ready.</p>
+      <button class="secondary next">I’m ready →</button>
+    </section>
+
+    <section class="page letter-page" id="page-5">
+      <button class="back-btn" type="button">← Back</button>
+      <div class="letter">
+        <p class="letter-small">To my Gudda,</p>
+        <h2>My Shona ♡</h2>
+        <p>I know things got rough between us. Somewhere along the way, the hurt got the better of both of us, and we ended up hurting each other in ways we never wanted to.</p>
+        <p>But you gave me a chance to prove myself, and that means more to me than I can explain. I'm trying, every day, to become a better person for myself, for you, and for us. I want to be someone you can feel safe with, someone who brings you comfort, and someone you can count on even when things aren't easy.</p>
+        <p>I miss the little things about us. The random conversations, the silly moments, the way we could turn an ordinary day into something special just by being together.</p>
+        <p>My world feels a little darker when I can't share my happiness with you. You're my light, my happiness, and my comfort. And even after everything, you're still the person I want to share the beautiful little moments of life with.</p>
+        <p>I don't expect everything to become perfect overnight. I just want us to take things one step at a time.</p>
+        <p class="signature">With a little more love, a little more understanding, and a little more of each other.</p>
+        <p class="signature">Always,<br>Gudda ♡</p>
+      </div>
+      <button class="primary next">One last thing →</button>
+    </section>
+
+    <section class="page final-page" id="page-6">
+      <button class="back-btn" type="button">← Back</button>
+      <div class="bear-scene small">
+        <img class="bubu-dudu portrait" src="assets/bubu-dudu-seaside.jpg" alt="Bubu and Dudu standing by the sea">
+      </div>
+      <p class="eyebrow">Friday evening?</p>
+      <h2>Would you like to<br>go on a date with me?</h2>
+      <p class="plan">A little walk, a lot of talking, something yummy to eat, and enjoying the lights and stars together.</p>
+      <div class="choice-row">
+        <button class="primary" id="yes-btn">Yes ♡</button>
+        <button class="secondary" id="no-btn">No</button>
+      </div>
+    </section>
+
+    <section class="page response-page" id="page-yes">
+      <button class="back-btn" type="button">← Back</button>
+      <div class="heart-burst">♡ ✦ ♡ ✦ ♡</div>
+      <div class="bear-scene large">
+        <img class="bubu-dudu happy" src="assets/bubu-dudu-pink.jpg" alt="Bubu and Dudu smiling together">
+      </div>
+      <h2>Yay, my Shona ♡</h2>
+      <p class="subtext">Then it’s a date. I can’t wait to make a tiny, beautiful memory with you.</p>
+      <button class="secondary restart">Read it again ↺</button>
+    </section>
+
+    <section class="page response-page" id="page-no">
+      <button class="back-btn" type="button">← Back</button>
+      <div class="bear-scene">
+        <img class="bubu-dudu sad" src="assets/bubu-dudu-seaside.jpg" alt="Bubu and Dudu standing by the sea">
+      </div>
+      <h2>It’s okay, Shona.</h2>
+      <p class="subtext">I really wanted to spend some time with you, so I’ll be a little sad. But I respect your answer, and I don’t want you to feel pressured. Thank you for hearing me out. ♡</p>
+      <button class="secondary restart">Back to the story ↺</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
